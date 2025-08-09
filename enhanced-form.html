@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- enhanced-form.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an enhanced Form HTML document.">
+    <meta name="keywords" content="embedded content,enhanced Form" >
+    <meta name="author" content="immaculate">
+    <title>Enhanced Form</title>
+</head>
+<body>
+    <header>
+        <h1>Enhanced Form</h1>
+        <nav>
+            <a href="#Home">Home</a>
+                <a href="#Table">Table</a>
+                <a href="#EmbeddedContent">Embedded Content</a>
+                <a href="#Form">Form</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section id="Home">
+            <h2>Home</h2>
+            <p>This is a document on week2 assignment.</p>
+            <dl>
+                <dt>Definition List</dt>
+                <dd>This is a definition list example.</dd>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                </dl>
+                <p>This document includes:</p>
+            <ul>
+                <li>Meta tags for SEO</li>
+                <li>Navigation menu</li>
+                <li>Lists and tables</li>
+                <li>Embedded content</li>
+                <li>Form inputs</li>
+            </ul>
+            <p>Examples of embedded content are:</p>
+            <ol type="1">
+                <li>Images</li>
+                <li>Videos</li>
+                <li>Audio files</li>
+            </ol>
+        </section>
+        <section id="Table">
+            <h2>Table</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <caption>Web Development Stack</caption>
+                <thead>
+                    <tr>
+                        <th>Frontend</th>
+                        <th>Backend</th>
+                        <th>Databases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Html</td>
+                        <td>Php</td>
+                        <td>Mysql</td>
+                    </tr>
+                    <tr>
+                        <td>Css</td>
+                        <td>Java</td>
+                        <td>Mongodb</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Web Development Technologies</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="EmbeddedContent">
+            <h2>Embedded Content</h2>
+            <p>Here are some examples of embedded content:</p>
+            <h3>Image</h3>
+            <img src="https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg" alt="an image of a river in nature" width="500" height="300"/><br/><br/>
+            <h3>Video</h3>
+            <video controls width="400" height="300">
+                <source src="https://videos.pexels.com/video-files/4448895/4448895-hd_1080_1920_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>    
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            </section>
+        <section id="Form">
+            <h2>Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br/><br/>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">Male
+                <input type="radio" id="female" name="gender" value="female">Female<br/><br/>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email"><br/><br/>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern=".{8,}"  title="Password must be at least 8 characters long"  minlength="8" maxlength="20" required><br/><br/>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="100" required><br/><br/>
+                <label for="date">Join date:</label>
+                <input type="date" id="date" name="date"value="2025-09-08" readonly><br/><br/>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select><br/><br/>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"cols="20" placeholder="write a message here.."></textarea><br/><br/>
+                <fieldset>
+                 <legend>Subscribe to:</legend>
+                    <label><input type="checkbox" name="subscribe" value="newsletter"> Newsletter</label>
+                    <label><input type="checkbox" name="subscribe" value="updates"> Product Updates</label>
+                 </fieldset><br/>
+                <button type="submit">Submit</button>
+            </form>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Immaculate. All rights reserved.</p>
+     </footer>
+
+</body>
+</html>
